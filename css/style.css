@@ -6,7 +6,7 @@ body {
 
 
 .logo-img{
-  width: 30%;
+  width: 60%;
   margin-top: -120px;
 }
 
@@ -885,7 +885,7 @@ section h3.non_italic{
 
 @media only screen and (max-width: 1000px){
   .logo-img{
-    width: 40%;
+    width: 60%;
   }
 }
 
