@@ -20,6 +20,7 @@ body {
 }
 
 
+
 .push-down{
   margin-top: 200px;
 }
@@ -272,6 +273,15 @@ fieldset[disabled] .btn-xl.active {
   border-radius: 0;
   color: white;
   background-color: #fed136;
+}
+
+.square-box{
+  margin-top: 170px;
+  
+  height: 50% !important;
+  width: 100%;
+  color: black;
+  z-index: 2;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
@@ -894,18 +904,33 @@ section h3.non_italic{
   .logo-img{
     width: 60%;
   }
+  .square-box{
+    display: none;
+  }
+  .intro-text{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
+
+
 
 @media only screen and (max-width: 768px){
   .logo-img{
     margin-top: 10px
   }
+  .square-box{
+    display: none;
+  }
+  
 }
 
 @media only screen and (max-width: 600px){
   .logo-img{
     width: 50%;
   }
+  
 }
 
 @media only screen and (max-width: 500px){
@@ -916,6 +941,7 @@ section h3.non_italic{
   .highlights_head_small{
     font-size: 0.8em;
   }
+  
 }
 
 @media only screen and (max-width: 420px){
@@ -924,6 +950,25 @@ section h3.non_italic{
   }
   .highlights_content{
     font-size: .9em;
+  }
+  
+}
+
+@media(max-width: 910px){
+  .intro-text{
+    margin: auto auto;
+    /* padding-left: 25%;
+    padding-right: 25%; */
+  }
+  
+}
+
+
+@media(max-width: 992px){
+  .intro-text{
+    margin: auto auto;
+    /* padding-left: 25%;
+    padding-right: 25%; */
   }
 }
 
@@ -953,6 +998,13 @@ section#contact .form-group .form-control::-webkit-input-placeholder{
 .slide {
   display: none;
   height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.square-box .slide {
+  margin-top: 70px;
+  display: none;
+  height: 70%;
   position: absolute;
   width: 100%;
 }
@@ -1028,6 +1080,15 @@ a.slide_btn {
   position: relative;
   top: -540px;
   box-shadow: 0px 0px 20px grey;
+}
+.square-box .directional_nav {
+  height: 50%;
+  margin-top: 260px;
+  /* max-width: 940px; */
+  width: 100%;
+  position: relative;
+  top: -540px;
+  box-shadow: 0px 0px 20px black;
 }
 
 .previous_btn {
